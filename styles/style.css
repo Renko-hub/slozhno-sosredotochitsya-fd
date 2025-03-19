@@ -1,18 +1,12 @@
-/* #region Начало вспомогательных классов */
-
 .shadow-decor {
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
-
-/* #endregion Конец вспомогательных классов  */
-
-/* #region Начало глобальных компонентов */
 
 .page {
   color: var(--text-color, #f1b2ce);
   font-family: var(--page-font-family, "IBM Plex mono", monospace);
   font-size: 18px;
-  line-height: 23.4px;
+  line-height: 24px;
   background-color: var(--page-background-color, #000028);
   background-image: var(
     --page-background-image,
@@ -155,10 +149,6 @@
   inline-size: 100%;
 }
 
-/* #endregion Конец глобальных компонентов */
-
-/* #region Начало блока header */
-
 .header {
   align-items: start;
 }
@@ -211,25 +201,15 @@
   background: var(--accent-color, #ff0070);
 }
 
-/* #endregion Конец блока header */
-
-/* #region Начало блока main */
-
 .main {
   display: grid;
   gap: 50px;
   padding: 40px 10px;
 }
 
-/* #endregion Конец блока main */
-
-/* #region Начало блока footer */
-
 .footer {
   place-items: center;
 }
-
-/* #endregion Конец блока footer */
 
 @media (width >= 768px) {
   .rec-decor {
