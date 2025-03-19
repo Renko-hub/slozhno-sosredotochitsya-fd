@@ -1,18 +1,18 @@
 /* Файл style.css */
 
-/* Повторяющиеся классы*/
+/* Повторяющиеся компоненты и стили */
 
 .shadow-decor {
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
-/* Глобальные компоненты */
+/* Стили для глобальных компонентов */
 
 .page {
   color: var(--text-color, #f1b2ce);
   font-family: var(--font-family, "IBM Plex mono", monospace);
   font-size: 18px;
-  line-height: 23.4px;
+  line-height: 24px;
   background-color: var(--background-color, #000028);
   background-image: var(--background-image, url("../images/cover-image.png"));
   background-position: center;
@@ -186,7 +186,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--secondary-color-40, #ff007066);
+  border-color: var(--button-hover-color, #ff007066);
 }
 
 .header__theme-menu-button:focus {
