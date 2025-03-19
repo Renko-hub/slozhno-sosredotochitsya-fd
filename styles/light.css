@@ -1,6 +1,6 @@
 /* Файл light.css */
 
-:root.theme-light {
+.theme_light.page {
   --text-color: var(--color-black-2, #353430);
   --accent-color: var(--color-pink-4, #ff8dcb);
   --brand-color: var(--color-pink-3, #ffc2e6);
@@ -13,7 +13,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .theme_light.page {
+  :root {
     --text-color: var(--color-black-2, #353430);
     --accent-color: var(--color-pink-4, #ff8dcb);
     --brand-color: var(--color-pink-3, #ffc2e6);
