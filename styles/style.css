@@ -1,3 +1,5 @@
+/* Файл style.css */
+
 /* Повторяющееся свойство */
 
 .shadow-decor {
@@ -10,7 +12,7 @@
   color: var(--text-color, #f1b2ce);
   font-family: var(--font-family, "IBM Plex mono", monospace);
   font-size: 18px;
-  line-height: 23.4px;
+  line-height: 24px;
   background-color: var(--background-color, #000028);
   background-image: var(--background-image, url("../images/cover-image.png"));
   background-position: center;

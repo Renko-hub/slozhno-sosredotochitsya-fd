@@ -1,4 +1,6 @@
-:root {
+/* Файл light.css */
+
+:root.theme-light {
   --text-color: var(--color-black-2, #353430);
   --accent-color: var(--color-pink-4, #ff8dcb);
   --brand-color: var(--color-pink-3, #ffc2e6);
@@ -10,14 +12,16 @@
   --rec-decor-visibility: hidden;
 }
 
-.theme_light.page {
-  --text-color: var(--color-black-2, #353430);
-  --accent-color: var(--color-pink-4, #ff8dcb);
-  --brand-color: var(--color-pink-3, #ffc2e6);
-  --highlight-color: var(--color-black-2, #353430);
-  --secondary-color: var(--color-black-2, #353430);
-  --secondary-color-40: var(--color-black-2-40, #32312d66);
-  --background-color: var(--color-pink-1, #fff1f7);
-  --background-image: url("../images/cover-image-light.png");
-  --rec-decor-visibility: hidden;
+@media (prefers-color-scheme: light) {
+  .theme_light.page {
+    --text-color: var(--color-black-2, #353430);
+    --accent-color: var(--color-pink-4, #ff8dcb);
+    --brand-color: var(--color-pink-3, #ffc2e6);
+    --highlight-color: var(--color-black-2, #353430);
+    --secondary-color: var(--color-black-2, #353430);
+    --secondary-color-40: var(--color-black-2-40, #32312d66);
+    --background-color: var(--color-pink-1, #fff1f7);
+    --background-image: url("../images/cover-image-light.png");
+    --rec-decor-visibility: hidden;
+  }
 }
