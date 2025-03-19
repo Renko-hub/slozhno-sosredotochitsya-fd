@@ -5,7 +5,7 @@
   --highlight-color: var(--color-black-2, #353430);
   --secondary-color: var(--color-black-2, #353430);
   --secondary-color-40: var(--color-black-2-40, #32312d66);
-  ---background-color: var(--color-pink-1, #fff1f7);
+  --background-color: var(--color-pink-1, #fff1f7);
   --background-image: url("../images/cover-image-light.png");
   --rec-decor-visibility: hidden;
 }
