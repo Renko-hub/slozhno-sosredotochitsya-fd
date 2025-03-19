@@ -1,13 +1,29 @@
 /* Файл dark.css */
 
-.theme_dark.page {
+:root.theme-dark {
   --text-color: var(--color-pink-2, #f1b2ce);
-  --title-color: var(--color-purple-1, #db00ff);
+  --brand-color: var(--color-purple-1, #db00ff);
   --secondary-color: var(--color-purple-2, #ff0070);
-  --secondary-color-40: var(--color-purple-2-40, #ff007066);
+  --secondary-color-40: var(--color-purple-2-40, #ff007040);
   --accent-color: var(--color-purple-2, #ff0070);
   --highlight-color: var(--color-black-1, #000028);
+
   --background-color: var(--color-black-1, #000028);
   --background-image: url("../images/cover-image-dark.png");
+
+  --rec-decor-visibility: visible;
+}
+
+.theme_dark.page {
+  --text-color: var(--color-pink-2, #f1b2ce);
+  --brand-color: var(--color-purple-1, #db00ff);
+  --secondary-color: var(--color-purple-2, #ff0070);
+  --secondary-color-40: var(--color-purple-2-40, #ff007040);
+  --accent-color: var(--color-purple-2, #ff0070);
+  --highlight-color: var(--color-black-1, #000028);
+
+  --background-color: var(--color-black-1, #000028);
+  --background-image: url("../images/cover-image-dark.png");
+
   --rec-decor-visibility: visible;
 }
