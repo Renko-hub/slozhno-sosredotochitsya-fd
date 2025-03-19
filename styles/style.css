@@ -187,7 +187,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--secondary-color-o-40, #ff0070);
+  border-color: var(--secondary-color-40, #ff0070);
 }
 
 .header__theme-menu-button:focus {
