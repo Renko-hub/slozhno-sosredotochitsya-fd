@@ -1,10 +1,11 @@
+/* Файл variables.css */
+
+/* Переменные темной темы */
+
 :root {
-  --title-color: #DB00FF;
-  --text-color: #F1B2CE;
-  --sub-text-color: #000028;
-  --accent-color: #ff0070;
-  --font: 'IBM Plex mono';
-  --font-size: 18px;
-  --btn-color:#ff0070;
-  --backgroung-image: url(../images/cover-image-dark.png);
+  --color-purple-1: #db00ff;
+  --color-purple-2: #ff0070;
+  --color-purple-2-40: #ff007066;
+  --color-pink-2: #f1b2ce;
+  --color-black-1: #000028;
 }
