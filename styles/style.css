@@ -3,18 +3,18 @@
 /* Повторяющиеся компоненты и стили */
 
 .shadow-decor {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 /* Стили для глобальных компонентов */
 
 .page {
-  color: var(--text-color, #f1b2ce);
-  font-family: var(--font-family, "IBM Plex mono", monospace);
+  color: var(--text-color);
+  font-family: var(--font-family);
   font-size: 18px;
   line-height: 24px;
-  background-color: var(--background-color, #000028);
-  background-image: var(--background-image, url("../images/cover-image.png"));
+  background-color: var(--background-color);
+  background-image: var(--background-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -40,15 +40,15 @@
 }
 
 .decorated-zone::before {
-  border-inline-end: 1px solid var(--secondary-color, #ff0070);
-  border-block-start: 1px solid var(--secondary-color, #ff0070);
+  border-inline-end: 1px solid var(--secondary-color);
+  border-block-start: 1px solid var(--secondary-color);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .decorated-zone::after {
-  border-inline-start: 1px solid var(--secondary-color, #ff0070);
-  border-block-end: 1px solid var(--secondary-color, #ff0070);
+  border-inline-start: 1px solid var(--secondary-color);
+  border-block-end: 1px solid var(--secondary-color);
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
@@ -72,7 +72,7 @@
 .rec-decor {
   position: absolute;
   z-index: -1;
-  visibility: var(--rec-decor, visible);
+  visibility: var(--rec-decor);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -82,7 +82,7 @@
 
 .rec-decor::before {
   content: "REC";
-  color: var(--accent-color, #ff0070);
+  color: var(--accent-color);
   line-height: 24px;
 }
 
@@ -90,30 +90,30 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
-  background: var(--accent-color, #ff0070);
+  box-shadow: 0 0 2px 2px var(--accent-color);
+  background: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
 }
 
 .page-title {
-  color: var(--title-decor, #db00ff);
+  color: var(--title-decor);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .title {
-  color: var(--secondary-color, #ff0070);
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
 }
 
 .title-decor {
-  color: var(--accent-background, #000028);
-  background: var(--accent-color, #ff0070);
+  color: var(--accent-background);
+  background: var(--accent-color);
 }
 
 .section {
@@ -172,7 +172,7 @@
 .header__theme-menu-button {
   border: 1px solid transparent;
   padding: 2px 12px;
-  color: var(--secondary-color, #ff0070);
+  color: var(--secondary-color);
   line-height: 18px;
   text-transform: lowercase;
   background: transparent;
@@ -186,7 +186,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--button-hover-color, #ff007066);
+  border-color: var(--button-hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -199,11 +199,11 @@
 
 .header__title {
   margin-block: 55px;
-  color: var(--accent-background, #000028);
+  color: var(--accent-background);
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
-  background: var(--accent-color, #ff0070);
+  background: var(--accent-color);
 }
 
 /* Стили для main */
@@ -220,7 +220,7 @@
   place-items: center;
 }
 
-/* Медиа-запросы */
+/* Медиа-запросы fs mobile*/
 
 @media (width >= 768px) {
   .rec-decor {
@@ -284,9 +284,11 @@
   }
 }
 
+/* Медиа-запросы fs-desktop*/
+
 @media (width >= 1024px) {
   .page-title {
-    text-shadow: 4px 4px 0 var(--color-purple-2, #ff0070);
+    text-shadow: 4px 4px 0 var(--color-purple-2);
   }
 
   .section {
