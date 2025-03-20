@@ -1,31 +1,12 @@
-/* Файл light.css */
-
-.theme_light.page {
-  --text-color: var(--color-black-2, #353430);
-  --accent-color: var(--color-pink-4, #ff8dcb);
-  --title-decor: var(--color-pink-3, #ffc2e6);
-  --accent-background: var(--color-black-2, #353430);
-  --secondary-color: var(--color-black-2, #353430);
-  --button-hover-color: var(--color-black-3, #35343066);
-
-  --background-color: var(--color-pink-1, #fff1f7);
-  --background-image: url("../images/cover-image-light.png");
-
-  --rec-decor: hidden;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color: var(--color-black-2, #353430);
-    --accent-color: var(--color-pink-4, #ff8dcb);
-    --title-decor: var(--color-pink-3, #ffc2e6);
-    --accent-background: var(--color-black-2, #353430);
-    --secondary-color: var(--color-black-2, #353430);
-    --button-hover-color: var(--color-black-3, #35343066);
-
-    --background-color: var(--color-pink-1, #fff1f7);
-    --background-image: url("../images/cover-image-light.png");
-
-    --rec-decor: hidden;
-  }
+.page.theme_light {
+  --background-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --menu-color: #353430;
+  --text-color: #353430;
+  --heading-color: #ffc2e6;
+  --title-decor-color: #353430;
+  --title-color: #353430;
+  --hover-border-color: rgba(50, 49, 45, 0.4);
+  --display-bulb: none;
+  background-image: url(../images/cover-image-light.png);
 }
