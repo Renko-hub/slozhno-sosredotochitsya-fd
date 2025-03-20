@@ -72,7 +72,7 @@
 .rec-decor {
   position: absolute;
   z-index: -1;
-  visibility: var(--rec-decor-visibility, visible);
+  visibility: var(--rec-decor, visible);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -97,7 +97,7 @@
 }
 
 .page-title {
-  color: var(--title-color, #db00ff);
+  color: var(--title-decor, #db00ff);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
@@ -112,7 +112,7 @@
 }
 
 .title-decor {
-  color: var(--highlight-color, #000028);
+  color: var(--accent-background, #000028);
   background: var(--accent-color, #ff0070);
 }
 
@@ -199,7 +199,7 @@
 
 .header__title {
   margin-block: 55px;
-  color: var(--highlight-color, #000028);
+  color: var(--accent-background, #000028);
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;

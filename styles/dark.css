@@ -1,31 +1,27 @@
 /* Файл dark.css */
 
+/* Переменные тёмной темы - копия */
+
+:root.theme-dark {
+  --color-black-1: #000028;
+  --color-pink-2: #f1b2ce;
+  --color-purple-1: #db00ff;
+  --color-purple-2: #ff0070;
+  --color-purple-3: #ff007066;
+}
+
+/* Дополнительные стили */
+
 .theme_dark.page {
   --text-color: var(--color-pink-2, #f1b2ce);
-  --title-color: var(--color-purple-1, #db00ff);
+  --title-decor: var(--color-purple-1, #db00ff);
   --secondary-color: var(--color-purple-2, #ff0070);
   --button-hover-color: var(--color-purple-3, #ff007066);
   --accent-color: var(--color-purple-2, #ff0070);
-  --highlight-color: var(--color-black-1, #000028);
+  --accent-background: var(--color-black-1, #000028);
 
   --background-color: var(--color-black-1, #000028);
   --background-image: url("../images/cover-image-dark.png");
 
-  --rec-decor-visibility: visible;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: var(--color-pink-2, #f1b2ce);
-    --title-color: var(--color-purple-1, #db00ff);
-    --secondary-color: var(--color-purple-2, #ff0070);
-    --button-hover-color: var(--color-purple-3, #ff007066);
-    --accent-color: var(--color-purple-2, #ff0070);
-    --highlight-color: var(--color-black-1, #000028);
-
-    --background-color: var(--color-black-1, #000028);
-    --background-image: url("../images/cover-image-dark.png");
-
-    --rec-decor-visibility: visible;
-  }
+  --rec-decor: visible;
 }
