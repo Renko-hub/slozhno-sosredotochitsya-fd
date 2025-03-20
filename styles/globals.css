@@ -1,4 +1,4 @@
-/* Файл global.css */
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 *,
 *::before,
@@ -39,9 +39,4 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-img {
-  max-inline-size: 100%;
-  block-size: auto;
 }

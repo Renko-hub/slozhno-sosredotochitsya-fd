@@ -1,31 +1,16 @@
-/* Файл dark.css */
-
-.theme_dark.page {
-  --text-color: var(--color-pink-2, #f1b2ce);
-  --title-color: var(--color-purple-1, #db00ff);
-  --secondary-color: var(--color-purple-2, #ff0070);
-  --button-hover-color: var(--color-purple-2-40, #ff007066);
-  --accent-color: var(--color-purple-2, #ff0070);
-  --highlight-color: var(--color-black-1, #000028);
-
-  --background-color: var(--color-black-1, #000028);
-  --background-image: url("../images/cover-image-dark.png");
-
-  --rec-decor-visibility: visible;
+.page.theme_dark {
+  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --sub-text-color: #000028;
+  --accent-color: #ff0070;
+  --btn-color:#ff0070;
+  --backgroung-image: url(../images/cover-image-dark.png);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: var(--color-pink-2, #f1b2ce);
-    --title-color: var(--color-purple-1, #db00ff);
-    --secondary-color: var(--color-purple-2, #ff0070);
-    --button-hover-color: var(--color-purple-2-40, #ff007066);
-    --accent-color: var(--color-purple-2, #ff0070);
-    --highlight-color: var(--color-black-1, #000028);
+.theme_dark .decorative__element {
+  display: flex;
+}
 
-    --background-color: var(--color-black-1, #000028);
-    --background-image: url("../images/cover-image-dark.png");
-
-    --rec-decor-visibility: visible;
-  }
+.theme_dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.40);
 }
