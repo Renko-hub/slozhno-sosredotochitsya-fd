@@ -247,19 +247,19 @@
   }
 
   .section_1 .main__section-content,
-  .section_2 .main__section-content {
+  .section_3 .main__section-content {
     grid-column: 2/4;
   }
 
-  .factors .main__section-content {
+  .section_2 .main__section-content {
     grid-column: span 3;
   }
 
-  .section_2 .main__section-title {
+  .section_3 .main__section-title {
     grid-row: span 2;
   }
 
-  .section_2 .main__section-subtitle {
+  .section_3 .main__section-subtitle {
     grid-column: span 2;
   }
 
@@ -309,7 +309,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .factors .main__section-content {
+  .section_2 .main__section-content {
     grid-column: span 1;
     grid-row: 2/3;
   }
