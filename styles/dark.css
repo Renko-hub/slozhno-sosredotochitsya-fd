@@ -1,3 +1,5 @@
+/* Файл dark.css */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #000028;
@@ -8,7 +10,7 @@
     --text-color: #f1b2ce;
     --title-decor-color: #000028;
     --title-color: #ff0070;
-    --display-bulb: flex;
+    --rec-decor: flex;
   }
 
   .page {
@@ -16,7 +18,7 @@
   }
 }
 
-.page.theme_dark {
+.theme_dark.page {
   --background-color: #000028;
   --accent-color: #ff0070;
   --heading-color: #db00ff;
@@ -25,6 +27,6 @@
   --text-color: #f1b2ce;
   --title-decor-color: #000028;
   --title-color: #ff0070;
-  --display-bulb: flex;
+  --rec-decor: flex;
   background-image: url(../images/cover-image-dark.png);
 }

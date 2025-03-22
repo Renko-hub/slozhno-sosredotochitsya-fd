@@ -1,8 +1,10 @@
+/* Файл style.css */
+
 .page {
   color: var(--text-color, #353430);
-  font-family: var(--font-family, 'IBM Plex Mono', monospace);
+  font-family: var(--font-family, "IBM Plex Mono", monospace);
   font-size: var(--font-size, 18px);
-  line-height: var(--line-height, 1.3);
+  line-height: var(--line-height, 82.5%);
   background-color: var(--background-color, #fff1f7);
   background-image: url(../images/cover-image-light.png);
   background-repeat: no-repeat;
@@ -21,9 +23,9 @@
   block-size: max(100vb, 668px);
 }
 
-.header__bulb {
+.rec-decor {
   position: absolute;
-  display: var(--display-bulb, none);
+  display: var(--rec-decor, none);
   align-items: center;
   gap: 10px;
   color: var(--accent-color, #ff0070);
@@ -31,8 +33,8 @@
   inset-inline-end: calc(var(--general-padding, 10px) + 8px);
 }
 
-.header__bulb::after {
-  content: '';
+.rec-decor::after {
+  content: "";
   border-radius: 50%;
   background-color: var(--accent-color, #ff0070);
   filter: drop-shadow(0px 0px 4px var(--accent-color, #ff0070));
@@ -41,7 +43,7 @@
 }
 
 .header::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border-inline-end: 1px solid var(--menu-color, #353430);
@@ -53,7 +55,7 @@
 }
 
 .header::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border-inline-start: 1px solid var(--menu-color, #353430);
@@ -100,12 +102,12 @@
   pointer-events: none;
 }
 
-.header__promo {
-  margin-block-start: var(--promo-margin, 55px);
+.header__title {
+  margin-block-start: var(--header-margin, 55px);
   max-inline-size: 364px;
 }
 
-.decorations {
+.page-title {
   justify-self: start;
   color: var(--heading-color, #ffc2e6);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -186,7 +188,7 @@
 }
 
 .footer::before {
-  content: '';
+  content: "";
   display: block;
   justify-self: end;
   border-inline-end: 1px solid var(--menu-color, #353430);
@@ -196,7 +198,7 @@
 }
 
 .footer::after {
-  content: '';
+  content: "";
   display: block;
   border-inline-start: 1px solid var(--menu-color, #353430);
   border-block-end: 1px solid var(--menu-color, #353430);
@@ -204,7 +206,7 @@
   inline-size: 25px;
 }
 
-.footer .decorations {
+.footer .page-title {
   justify-self: center;
   align-self: center;
   font-weight: 700;
@@ -221,7 +223,7 @@
   @media (width < 1024px) {
     :root {
       --menu-margin: 172px;
-      --promo-margin: 162px;
+      --header-margin: 162px;
     }
   }
 
@@ -231,11 +233,11 @@
     --main-gap: 80px;
   }
 
-  .decorations {
+  .page-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .header .decorations {
+  .header .page-title {
     margin-inline-start: -20px;
   }
 
@@ -282,7 +284,7 @@
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
-    --promo-margin: 114px;
+    --header-margin: 114px;
   }
 
   .header__theme-menu {
@@ -293,12 +295,12 @@
     flex-direction: row;
   }
 
-  .header .decorations,
-  .footer .decorations {
+  .header .page-title,
+  .footer .page-title {
     text-shadow: 4px 4px 0px #ff0070;
   }
 
-  .header__promo {
+  .header__title {
     max-inline-size: 491px;
   }
 
