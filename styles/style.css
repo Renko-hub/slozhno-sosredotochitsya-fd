@@ -24,7 +24,7 @@
 
 .rec-decor {
   position: absolute;
-  display: var(--rec-decor, none);
+  display: var(--rec-decor, flex);
   align-items: center;
   gap: 10px;
   color: var(--accent-color, #ff0070);
