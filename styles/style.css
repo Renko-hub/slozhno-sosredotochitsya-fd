@@ -3,7 +3,7 @@
   color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
   font-size: var(--font-size, 18px);
-  line-height: var(--line-height, 24px);
+  line-height: var(--line-height, 23.4px);
   background-color: var(--background-color, #fff1f7);
   background-image: url(../images/cover-image-light.png);
   background-repeat: no-repeat;
