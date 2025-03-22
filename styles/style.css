@@ -106,7 +106,7 @@
   max-inline-size: 364px;
 }
 
-.decorations {
+.page-title {
   justify-self: start;
   color: var(--heading-color, #ffc2e6);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -205,7 +205,7 @@
   inline-size: 25px;
 }
 
-.footer .decorations {
+.footer .page-title {
   justify-self: center;
   align-self: center;
   font-weight: 700;
@@ -232,11 +232,11 @@
     --main-gap: 80px;
   }
 
-  .decorations {
+  .page-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .header .decorations {
+  .header .page-title {
     margin-inline-start: -20px;
   }
 
@@ -294,8 +294,8 @@
     flex-direction: row;
   }
 
-  .header .decorations,
-  .footer .decorations {
+  .header .page-title,
+  .footer .page-title {
     text-shadow: 4px 4px 0px #ff0070;
   }
 
