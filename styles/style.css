@@ -7,12 +7,21 @@
 }
 
 .decorated-zone::before {
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
+}
+
+.decorated-zone::after,
+.decorated-zone::before {
   display: block;
   content: "";
   block-size: 25px;
   inline-size: 25px;
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
 }
 
 /* Файл style.css */
@@ -72,13 +81,7 @@
 }
 
 .header::after {
-  content: "";
   position: absolute;
-  display: block;
-  border-inline-start: 1px solid var(--menu-color, #353430);
-  border-block-end: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
   inset-inline-start: var(--general-padding, 10px);
   inset-block-end: var(--general-padding, 10px);
 }
@@ -195,15 +198,6 @@
 
 .footer::before {
   justify-self: end;
-}
-
-.footer::after {
-  content: "";
-  display: block;
-  border-inline-start: 1px solid var(--menu-color, #353430);
-  border-block-end: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
 }
 
 .footer .page-title {
