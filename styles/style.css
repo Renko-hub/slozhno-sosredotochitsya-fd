@@ -45,8 +45,8 @@
   grid-template-rows: 1fr auto 1fr auto;
   justify-items: end;
   align-items: start;
+  block-size: max(100vh, 668px);
   padding: var(--general-padding, 10px);
-  block-size: minmax(668px, 100vh);
 }
 
 .header::before {
@@ -182,8 +182,8 @@
 .footer {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  block-size: max(100vh, 668px);
   padding: var(--general-padding, 10px);
-  block-size: minmax(668px, 100vh);
 }
 
 .footer::before {
