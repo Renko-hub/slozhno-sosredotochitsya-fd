@@ -10,6 +10,9 @@
     --title-decor-color: #000028;
     --title-color: #ff0070;
     --rec-decor: flex;
+  }
+
+  .page {
     background-image: url(../images/cover-image-dark.png);
   }
 }
