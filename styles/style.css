@@ -28,7 +28,7 @@
   color: var(--accent-color, #ff0070);
   inset-block-start: var(--general-padding, 10px);
   inset-inline-end: calc(
-    var(--general-padding, 10px) + var(--calc-general-padding, 8px)
+    var(--general-padding, 10px) + var(--add-general-padding, 8px)
   );
 }
 
