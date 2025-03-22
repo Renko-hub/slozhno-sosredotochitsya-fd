@@ -1,3 +1,11 @@
+/* Общие стили для decorated-zone */
+
+.decorated-zone {
+  display: grid;
+  block-size: max(100vh, 668px);
+  padding: var(--general-padding, 10px);
+}
+
 /* Файл style.css */
 .page {
   color: var(--text-color, #353430);
@@ -43,12 +51,9 @@
 
 .header {
   position: relative;
-  display: grid;
   grid-template-rows: 1fr auto 1fr auto;
   justify-items: end;
   align-items: start;
-  block-size: max(100vh, 668px);
-  padding: var(--general-padding, 10px);
 }
 
 .header::before {
@@ -182,10 +187,7 @@
 }
 
 .footer {
-  display: grid;
   grid-template-rows: auto 1fr auto;
-  block-size: max(100vh, 668px);
-  padding: var(--general-padding, 10px);
 }
 
 .footer::before {
@@ -311,7 +313,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section_2 .main__section-content {
+  .second_section .main__section-content {
     grid-column: span 1;
     grid-row: 2/3;
   }
