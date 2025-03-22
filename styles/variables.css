@@ -1,5 +1,4 @@
 /* Файл variables.css */
-
 :root {
   --background-color: #fff1f7;
   --accent-color: #ff8dcb;
@@ -17,5 +16,5 @@
   --main-gap: 50px;
   --menu-margin: 65px;
   --promo-margin: 55px;
-  --display-bulb: none;
+  --rec-decor: none;
 }

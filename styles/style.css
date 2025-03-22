@@ -1,5 +1,4 @@
 /* Файл style.css */
-
 .page {
   color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
@@ -23,9 +22,9 @@
   block-size: max(100vb, 668px);
 }
 
-.header__bulb {
+.rec-decor {
   position: absolute;
-  display: var(--display-bulb, none);
+  display: var(--rec-decor, none);
   align-items: center;
   gap: 10px;
   color: var(--accent-color, #ff0070);
@@ -33,7 +32,7 @@
   inset-inline-end: calc(var(--general-padding, 10px) + 8px);
 }
 
-.header__bulb::after {
+.rec-decor::after {
   content: "";
   border-radius: 50%;
   background-color: var(--accent-color, #ff0070);
