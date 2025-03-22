@@ -3,7 +3,7 @@
   color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
   font-size: var(--font-size, 18px);
-  line-height: var(--line-height, 1.3);
+  line-height: var(--line-height, 82.5%);
   background-color: var(--background-color, #fff1f7);
   background-image: url(../images/cover-image-light.png);
   background-repeat: no-repeat;
@@ -101,8 +101,8 @@
   pointer-events: none;
 }
 
-.header__promo {
-  margin-block-start: var(--promo-margin, 55px);
+.header__title {
+  margin-block-start: var(--title-margin, 55px);
   max-inline-size: 364px;
 }
 
@@ -222,7 +222,7 @@
   @media (width < 1024px) {
     :root {
       --menu-margin: 172px;
-      --promo-margin: 162px;
+      --title-margin: 162px;
     }
   }
 
@@ -283,7 +283,7 @@
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
-    --promo-margin: 114px;
+    --title-margin: 114px;
   }
 
   .header__theme-menu {
@@ -299,7 +299,7 @@
     text-shadow: 4px 4px 0px #ff0070;
   }
 
-  .header__promo {
+  .header__title {
     max-inline-size: 491px;
   }
 
