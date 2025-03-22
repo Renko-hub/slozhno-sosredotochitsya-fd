@@ -234,20 +234,20 @@
     grid-template-columns: 236px 1fr 1fr;
   }
 
-  .first__section .main__section-content,
-  .third__section .main__section-content {
+  .first_section .main__section-content,
+  .third_section .main__section-content {
     grid-column: 2/4;
   }
 
-  .second__section .main__section-content {
+  .second_section .main__section-content {
     grid-column: span 3;
   }
 
-  .third__section .main__section-title {
+  .third_section .main__section-title {
     grid-row: span 2;
   }
 
-  .third__section .main__section-subtitle {
+  .third_section .main__section-subtitle {
     grid-column: span 2;
   }
 
