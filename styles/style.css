@@ -6,6 +6,15 @@
   padding: var(--general-padding, 10px);
 }
 
+.decorated-zone::before {
+  display: block;
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
+}
+
 /* Файл style.css */
 .page {
   color: var(--text-color, #353430);
@@ -57,13 +66,7 @@
 }
 
 .header::before {
-  content: "";
   position: absolute;
-  display: block;
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
   inset-inline-end: var(--general-padding, 10px);
   inset-block-start: var(--general-padding, 10px);
 }
@@ -191,13 +194,7 @@
 }
 
 .footer::before {
-  content: "";
-  display: block;
   justify-self: end;
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
 }
 
 .footer::after {
