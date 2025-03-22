@@ -142,24 +142,24 @@
   background-color: var(--accent-color, #ff8dcb);
 }
 
-.regular {
+.title-section {
   font-weight: 400;
 }
 
-.card-text-link {
+.text-shadow {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
 }
 
-.card-text-link:hover {
+.text-shadow:hover {
   border-bottom: 1px solid var(--text-color, #353430);
 }
 
-.card-text-link:focus {
+.text-shadow:focus {
   outline: none;
 }
 
-.card-text-link:focus-visible {
+.text-shadow:focus-visible {
   outline: 1px solid var(--text-color, #353430);
 }
 
