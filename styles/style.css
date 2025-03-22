@@ -1,10 +1,10 @@
 /* Файл style.css */
 .page {
-  color: var(--text-color, #f1b2ce);
+  color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
   font-size: var(--font-size, 18px);
   line-height: var(--line-height, 23.4px);
-  background-color: var(--background-color, #000028);
+  background-color: var(--background-color, #fff1f7);
   background-image: url(../images/cover-image-light.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -24,7 +24,7 @@
 
 .rec-decor {
   position: absolute;
-  display: var(--rec-decor, flex);
+  display: var(--rec-decor, none);
   align-items: center;
   gap: 10px;
   color: var(--accent-color, #ff0070);
@@ -45,8 +45,8 @@
   content: "";
   position: absolute;
   display: block;
-  border-inline-end: 1px solid var(--menu-color, #ff0070);
-  border-block-start: 1px solid var(--menu-color, #ff0070);
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
   block-size: 25px;
   inline-size: 25px;
   inset-inline-end: var(--general-padding, 10px);
@@ -57,8 +57,8 @@
   content: "";
   position: absolute;
   display: block;
-  border-inline-start: 1px solid var(--menu-color, #ff0070);
-  border-block-end: 1px solid var(--menu-color, #ff0070);
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
   block-size: 25px;
   inline-size: 25px;
   inset-inline-start: var(--general-padding, 10px);
@@ -78,14 +78,14 @@
 .header__theme-menu-button {
   border: none;
   padding: 0px 13px;
-  color: var(--menu-color, #ff0070);
+  color: var(--menu-color, #353430);
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-hover-color, #ff007066);
+  outline: 1px solid var(--button-hover-color, #35343066);
 }
 
 .header__theme-menu-button:focus {
@@ -93,11 +93,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--menu-color, #ff0070);
+  border-block-end: 1px solid var(--menu-color, #353430);
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--menu-color, #ff0070);
+  outline: 1px solid var(--menu-color, #353430);
   pointer-events: none;
 }
 
@@ -108,10 +108,10 @@
 
 .page-title {
   justify-self: start;
-  color: var(--heading-color, #db00ff);
+  color: var(--heading-color, #ffc2e6);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0px var(--accent-color, #ff8dcb);
 }
 
 .main {
@@ -127,7 +127,7 @@
 }
 
 .main__section-title {
-  color: var(--title-color, #ff0070);
+  color: var(--title-color, #353430);
 }
 
 .main__section-content {
@@ -137,9 +137,9 @@
 }
 
 .title-decor {
-  color: var(--title-decor-color, #000028);
+  color: var(--title-decor-color, #353430);
   font-weight: 700;
-  background-color: var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff8dcb);
 }
 
 .title-section {
@@ -148,11 +148,11 @@
 
 .card-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
 }
 
 .card-link:hover {
-  border-bottom: 1px solid var(--text-color, #f1b2ce);
+  border-bottom: 1px solid var(--text-color, #353430);
 }
 
 .card-link:focus {
@@ -160,7 +160,7 @@
 }
 
 .card-link:focus-visible {
-  outline: 1px solid var(--text-color, #f1b2ce);
+  outline: 1px solid var(--text-color, #353430);
 }
 
 .main__section.gallery {
@@ -190,8 +190,8 @@
   content: "";
   display: block;
   justify-self: end;
-  border-inline-end: 1px solid var(--menu-color, #ff0070);
-  border-block-start: 1px solid var(--menu-color, #ff0070);
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
   block-size: 25px;
   inline-size: 25px;
 }
@@ -199,8 +199,8 @@
 .footer::after {
   content: "";
   display: block;
-  border-inline-start: 1px solid var(--menu-color, #ff0070);
-  border-block-end: 1px solid var(--menu-color, #ff0070);
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
   block-size: 25px;
   inline-size: 25px;
 }
@@ -209,7 +209,7 @@
   justify-self: center;
   align-self: center;
   font-weight: 700;
-  text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0px var(--accent-color, #ff8dcb);
 }
 
 /* Блок медиа-запросов */
@@ -246,8 +246,8 @@
     grid-template-columns: 236px 1fr 1fr;
   }
 
-  .cause .main__section-content,
-  .advice .main__section-content {
+  .section_1 .main__section-content,
+  .section_2 .main__section-content {
     grid-column: 2/4;
   }
 
@@ -255,11 +255,11 @@
     grid-column: span 3;
   }
 
-  .advice .main__section-title {
+  .section_2 .main__section-title {
     grid-row: span 2;
   }
 
-  .advice .main__section-subtitle {
+  .section_2 .main__section-subtitle {
     grid-column: span 2;
   }
 
