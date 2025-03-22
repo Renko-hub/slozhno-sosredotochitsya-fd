@@ -46,7 +46,7 @@
   justify-items: end;
   align-items: start;
   padding: var(--general-padding, 10px);
-  block-size: max(100vb, 668px);
+  block-size: minmax(668px, 100vh);
 }
 
 .header::before {
@@ -183,7 +183,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: var(--general-padding, 10px);
-  block-size: max(100vb, 668px);
+  block-size: minmax(668px, 100vh);
 }
 
 .footer::before {
