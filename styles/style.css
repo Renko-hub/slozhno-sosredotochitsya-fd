@@ -85,7 +85,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-border-color, #35343066);
+  outline: 1px solid var(--button-hover-color, #35343066);
 }
 
 .header__theme-menu-button:focus {
