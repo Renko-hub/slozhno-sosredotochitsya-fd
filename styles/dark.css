@@ -4,7 +4,7 @@
     --background-color: #000028;
     --accent-color: #ff0070;
     --heading-color: #db00ff;
-    --hover-border-color: rgba(255, 0, 112, 0.4);
+    --hover-border-color: #ff007066;
     --menu-color: #ff0070;
     --text-color: #f1b2ce;
     --title-decor-color: #000028;
@@ -17,11 +17,11 @@
   }
 }
 
-.page.theme_dark {
+.theme_dark.page {
   --background-color: #000028;
   --accent-color: #ff0070;
   --heading-color: #db00ff;
-  --hover-border-color: rgba(255, 0, 112, 0.4);
+  --hover-border-color: #ff007066;
   --menu-color: #ff0070;
   --text-color: #f1b2ce;
   --title-decor-color: #000028;

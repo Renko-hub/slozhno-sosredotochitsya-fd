@@ -1,5 +1,5 @@
 /* Файл light.css */
-.page.theme_light {
+.theme_light.page {
   --background-color: #fff1f7;
   --accent-color: #ff8dcb;
   --menu-color: #353430;
@@ -7,7 +7,7 @@
   --heading-color: #ffc2e6;
   --title-decor-color: #353430;
   --title-color: #353430;
-  --hover-border-color: rgba(50, 49, 45, 0.4);
+  --hover-border-color: #35343066;
   --rec-decor: none;
   background-image: url(../images/cover-image-light.png);
 }
