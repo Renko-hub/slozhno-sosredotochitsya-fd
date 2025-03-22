@@ -1,23 +1,4 @@
 /* Файл style.css */
-/* Общие стили decorated-zone */
-
-.decorated-zone {
-  display: grid;
-  block-size: max(100vh, 668px);
-  padding: var(--general-padding, 10px);
-}
-
-.decorated-zone::before,
-.decorated-zone::after {
-  content: "";
-  display: block;
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
-}
-
-/* Начало основного кода */
 .page {
   color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
@@ -62,19 +43,34 @@
 
 .header {
   position: relative;
+  display: grid;
   grid-template-rows: 1fr auto 1fr auto;
   justify-items: end;
   align-items: start;
+  block-size: max(100vh, 668px);
+  padding: var(--general-padding, 10px);
 }
 
 .header::before {
+  content: "";
   position: absolute;
+  display: block;
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
+  block-size: 25px;
+  inline-size: 25px;
   inset-inline-end: var(--general-padding, 10px);
   inset-block-start: var(--general-padding, 10px);
 }
 
 .header::after {
+  content: "";
   position: absolute;
+  display: block;
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
+  block-size: 25px;
+  inline-size: 25px;
   inset-inline-start: var(--general-padding, 10px);
   inset-block-end: var(--general-padding, 10px);
 }
@@ -186,11 +182,29 @@
 }
 
 .footer {
+  display: grid;
   grid-template-rows: auto 1fr auto;
+  block-size: max(100vh, 668px);
+  padding: var(--general-padding, 10px);
 }
 
 .footer::before {
+  content: "";
+  display: block;
   justify-self: end;
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
+  block-size: 25px;
+  inline-size: 25px;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
+  block-size: 25px;
+  inline-size: 25px;
 }
 
 .footer .page-title {
