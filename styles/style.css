@@ -24,7 +24,7 @@
   inline-size: 25px;
 }
 
-/* Стили блока page/header (шапки сайта) */
+/* Стили блока page/header (шапка сайта) */
 .page {
   color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
@@ -127,7 +127,7 @@
   max-inline-size: 364px;
 }
 
-/* Основная сеция main */
+/* Основная секция main */
 .main {
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@
   padding: var(--main-padding-block, 40px) var(--general-padding, 10px);
 }
 
-/* Блоки карточек и галереи */
+/* Блок карточек */
 .section {
   display: grid;
   gap: 20px;
@@ -178,8 +178,10 @@
   outline: 1px solid var(--text-color, #353430);
 }
 
+/* Галерея */
 .section.gallery {
   grid-template-rows: auto 142px 355px 237px 355px 237px;
+  grid-auto-flow: row;
 }
 
 .gallery-image {
@@ -194,7 +196,7 @@
   block-size: 100%;
 }
 
-/* Стили для footer (подвала сайта) */
+/* Стили для footer (подвал сайта) */
 .footer {
   grid-template-rows: auto 1fr auto;
 }
@@ -211,7 +213,7 @@
 }
 
 /* Блок медиа-запросов */
-/* Стили для экранов 768px и меньше */
+/* Стили для экранов 768px*/
 @media (width < 768px) {
   .gallery {
     gap: 10px;
@@ -244,20 +246,20 @@
     grid-template-columns: 236px 1fr 1fr;
   }
 
-  .first_section .section-content,
-  .third_section .section-content {
+  .main-section .section-content,
+  .advice-section .section-content {
     grid-column: 2/4;
   }
 
-  .second_section .section-content {
+  .task-section .section-content {
     grid-column: span 3;
   }
 
-  .third_section .section-title {
+  .advice-section .section-title {
     grid-row: span 2;
   }
 
-  .third_section .section-subtitle {
+  .advice-section .section-subtitle {
     grid-column: span 2;
   }
 
@@ -267,6 +269,7 @@
 
   .section.gallery {
     grid-template-rows: auto 192px 230px 318px;
+    grid-auto-flow: row;
   }
 
   .gallery-image:nth-of-type(1),
@@ -280,7 +283,7 @@
   }
 }
 
-/* Стили для экранов 1024px и меньше */
+/* Стили для экранов 1024px */
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
@@ -308,12 +311,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .second_section .section-content {
+  .task-section .section-content {
     grid-column: span 1;
     grid-row: 2/3;
   }
 
   .section.gallery {
     grid-template-rows: auto 260px 315px 428px;
+    grid-auto-flow: row;
   }
 }
