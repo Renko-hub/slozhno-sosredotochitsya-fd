@@ -1,5 +1,5 @@
+/* Файл style.css */
 /* Общие стили для decorated-zone */
-
 .decorated-zone {
   display: grid;
   block-size: max(100vh, 668px);
@@ -24,7 +24,7 @@
   inline-size: 25px;
 }
 
-/* Файл style.css */
+/* Стили блока page/header (шапки сайта) */
 .page {
   color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
@@ -127,6 +127,7 @@
   max-inline-size: 364px;
 }
 
+/* Основная сеция main */
 .main {
   display: flex;
   flex-direction: column;
@@ -134,16 +135,17 @@
   padding: var(--main-padding-block, 40px) var(--general-padding, 10px);
 }
 
-.main__section {
+/* Блоки карточек и галереи */
+.section {
   display: grid;
   gap: 20px;
 }
 
-.main__section-title {
+.section-title {
   color: var(--title-color, #353430);
 }
 
-.main__section-content {
+.section-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -176,7 +178,7 @@
   outline: 1px solid var(--text-color, #353430);
 }
 
-.main__section.gallery {
+.section.gallery {
   grid-template-rows: auto 142px 355px 237px 355px 237px;
 }
 
@@ -192,6 +194,7 @@
   block-size: 100%;
 }
 
+/* Стили для footer (подвала сайта) */
 .footer {
   grid-template-rows: auto 1fr auto;
 }
@@ -208,7 +211,7 @@
 }
 
 /* Блок медиа-запросов */
-
+/* Стили для экранов 768px и меньше */
 @media (width < 768px) {
   .gallery {
     gap: 10px;
@@ -237,37 +240,32 @@
     margin-inline-start: -20px;
   }
 
-  .main__section {
+  .section {
     grid-template-columns: 236px 1fr 1fr;
   }
 
-
-
-  .first_section .main__section-content,
-  .third_section .main__section-content {
+  .first_section .section-content,
+  .third_section .section-content {
     grid-column: 2/4;
   }
 
-  .second_section .main__section-content {
+  .second_section .section-content {
     grid-column: span 3;
   }
 
-  .third_section .main__section-title {
+  .third_section .section-title {
     grid-row: span 2;
   }
 
-  .third_section .main__section-subtitle {
+  .third_section .section-subtitle {
     grid-column: span 2;
   }
 
-
-
-
-  .gallery .main__section-subtitle {
+  .gallery .section-subtitle {
     grid-column: span 3;
   }
 
-  .main__section.gallery {
+  .section.gallery {
     grid-template-rows: auto 192px 230px 318px;
   }
 
@@ -282,6 +280,7 @@
   }
 }
 
+/* Стили для экранов 1024px и меньше */
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
@@ -305,20 +304,16 @@
     max-inline-size: 491px;
   }
 
-  .main__section {
+  .section {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-  
-  .second_section .main__section-content {
+  .second_section .section-content {
     grid-column: span 1;
     grid-row: 2/3;
   }
 
-
-
-  .main__section.gallery {
+  .section.gallery {
     grid-template-rows: auto 260px 315px 428px;
   }
 }
