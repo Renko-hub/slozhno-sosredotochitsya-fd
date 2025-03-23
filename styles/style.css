@@ -148,6 +148,7 @@
 .section-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -181,7 +182,6 @@
 /* Галерея */
 .section.gallery {
   grid-template-rows: auto 142px 355px 237px 355px 237px;
-  grid-auto-flow: row;
 }
 
 .gallery-image {
@@ -318,6 +318,5 @@
 
   .section.gallery {
     grid-template-rows: auto 260px 315px 428px;
-    grid-auto-flow: row;
   }
 }
