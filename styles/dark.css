@@ -9,7 +9,7 @@
     --heading-color: #db00ff;
     --button-hover-color: #ff007066;
     --text-color: #f1b2ce;
-    --title-decor-color: #000028;
+    --article-title-color: #000028;
     --rec-decor: flex;
   }
 
@@ -27,7 +27,7 @@
   --heading-color: #db00ff;
   --button-hover-color: #ff007066;
   --text-color: #f1b2ce;
-  --title-decor-color: #000028;
+  --article-title-color: #000028;
   --rec-decor: flex;
   background-image: url(../images/cover-image-dark.png);
 }

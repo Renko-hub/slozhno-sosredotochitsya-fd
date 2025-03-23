@@ -24,7 +24,29 @@
   inline-size: 25px;
 }
 
-/* Стили блока page/header (шапка сайта) */
+/* Стили блока REC (шапка сайта .rec-decor) */
+.rec-decor {
+  position: absolute;
+  display: var(--rec-decor, none);
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color, #ff0070);
+  inset-block-start: var(--general-padding, 10px);
+  inset-inline-end: calc(
+    var(--general-padding, 10px) + var(--add-general-padding, 8px)
+  );
+}
+
+.rec-decor::after {
+  content: "";
+  border-radius: 50%;
+  background-color: var(--accent-color, #ff0070);
+  filter: drop-shadow(0px 0px 4px var(--accent-color, #ff0070));
+  block-size: 9px;
+  inline-size: 9px;
+}
+
+/* Стили блока page */
 .page {
   color: var(--text-color, #353430);
   font-family: var(--font-family, "IBM Plex Mono", monospace);
@@ -46,26 +68,7 @@
   text-shadow: 4px 4px 0px var(--accent-color, #ff8dcb);
 }
 
-.rec-decor {
-  position: absolute;
-  display: var(--rec-decor, none);
-  align-items: center;
-  gap: 10px;
-  color: var(--accent-color, #ff0070);
-  inset-block-start: var(--general-padding, 10px);
-  inset-inline-end: calc(
-    var(--general-padding, 10px) + var(--add-general-padding, 8px)
-  );
-}
-
-.rec-decor::after {
-  content: "";
-  border-radius: 50%;
-  background-color: var(--accent-color, #ff0070);
-  filter: drop-shadow(0px 0px 4px var(--accent-color, #ff0070));
-  block-size: 9px;
-  inline-size: 9px;
-}
+/* Стили блока header (шапка сайта) */
 
 .header {
   position: relative;
@@ -145,15 +148,13 @@
   color: var(--title-color, #353430);
 }
 
-.section-content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.article {
+  display: grid;
   gap: 10px;
 }
 
-.title-decor {
-  color: var(--title-decor-color, #353430);
+.article-title {
+  color: var(--article-title-color, #353430);
   font-weight: 700;
   background-color: var(--accent-color, #ff8dcb);
 }
@@ -161,6 +162,8 @@
 .title-section {
   font-weight: 400;
 }
+
+/* Блок ссылок */
 
 .card-link {
   text-decoration: none;
@@ -246,12 +249,12 @@
     grid-template-columns: 236px 1fr 1fr;
   }
 
-  .main-section .section-content,
-  .advice-section .section-content {
+  .main-section .article,
+  .advice-section .article {
     grid-column: 2/4;
   }
 
-  .task-section .section-content {
+  .task-section .article {
     grid-column: span 3;
   }
 
@@ -311,7 +314,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .task-section .section-content {
+  .task-section .article {
     grid-column: span 1;
     grid-row: 2/3;
   }
