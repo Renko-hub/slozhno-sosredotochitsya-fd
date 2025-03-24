@@ -1,77 +1,4 @@
-/* #region Начало вспомогательных классов */
-
-.shadow-decor {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
-}
-
-/* #endregion Конец вспомогательных классов  */
-
-/* #region Начало глобальных компонентов */
-
-.page {
-  color: var(--text-color, #f1b2ce);
-  font-family: var(--page-font-family, "IBM Plex mono", monospace);
-  font-size: 18px;
-  line-height: 23.4px;
-  background-color: var(--page-background-color, #000028);
-  background-image: var(
-    --page-background-image,
-    url("../images/cover-image.png")
-  );
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.cover {
-  display: grid;
-  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
-}
-
-.decorated-zone {
-  position: relative;
-}
-
-.decorated-zone::before,
-.decorated-zone::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inline-size: 25px;
-  block-size: 25px;
-}
-
-.decorated-zone::before {
-  border-inline-end: 1px solid var(--secondary-color, #ff0070);
-  border-block-start: 1px solid var(--secondary-color, #ff0070);
-  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-}
-
-.decorated-zone::after {
-  border-inline-start: 1px solid var(--secondary-color, #ff0070);
-  border-block-end: 1px solid var(--secondary-color, #ff0070);
-  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-}
-
-.link {
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-.link:focus {
-  outline: 0;
-}
-
-.link:focus-visible {
-  outline: 1px solid currentColor;
-}
-
+/* Стили блока REC (шапка сайта .rec-decor) */
 .rec-decor {
   position: absolute;
   z-index: -1;
@@ -99,6 +26,50 @@
   block-size: 9px;
 }
 
+/* Общие стили для decorated-zone */
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid var(--secondary-color, #ff0070);
+  border-block-start: 1px solid var(--secondary-color, #ff0070);
+  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--secondary-color, #ff0070);
+  border-block-end: 1px solid var(--secondary-color, #ff0070);
+  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+/* Стили блока page/cover */
+.page {
+  color: var(--text-color, #f1b2ce);
+  font-family: var(--page-font-family, "IBM Plex mono", monospace);
+  font-size: var(--font-size, 18px);
+  line-height: var(--line-height, 23.4px);
+  background-color: var(--page-background-color, #000028);
+  background-image: var(
+    --page-background-image,
+    url("../images/cover-image.png")
+  );
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .page-title {
   color: var(--brand-color, #db00ff);
   font-weight: 700;
@@ -107,6 +78,13 @@
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
+.cover {
+  display: grid;
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  min-block-size: 100vh;
+}
+
+/* Стили всего текста */
 .title {
   color: var(--secondary-color, #ff0070);
   font-weight: 700;
@@ -119,6 +97,18 @@
   background: var(--accent-color, #ff0070);
 }
 
+.shadow-decor {
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+}
+
+/* Основная секция main */
+.main {
+  display: grid;
+  gap: var(--main-gap, 50px);
+  padding: 40px 10px;
+}
+
+/* Блок карточек */
 .section {
   display: grid;
   gap: 20px;
@@ -142,6 +132,7 @@
   gap: 10px;
 }
 
+/* Галерея */
 .gallery-list {
   display: grid;
   gap: 10px;
@@ -155,9 +146,24 @@
   inline-size: 100%;
 }
 
-/* #endregion Конец глобальных компонентов */
+/* Блок ссылок */
+.link {
+  text-decoration: none;
+}
 
-/* #region Начало блока header */
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus {
+  outline: 0;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+/* Стили блока header (шапка сайта) */
 
 .header {
   align-items: start;
@@ -165,7 +171,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block: 65px;
+  margin-block: var(--menu-margin, 65px);
 }
 
 .header__theme-menu-list {
@@ -203,7 +209,7 @@
 }
 
 .header__title {
-  margin-block: 55px;
+  margin-block: var(--title-margin, 55px);
   color: var(--highlight-color, #000028);
   font-weight: 700;
   font-size: inherit;
@@ -211,26 +217,12 @@
   background: var(--accent-color, #ff0070);
 }
 
-/* #endregion Конец блока header */
-
-/* #region Начало блока main */
-
-.main {
-  display: grid;
-  gap: 50px;
-  padding: 40px 10px;
-}
-
-/* #endregion Конец блока main */
-
-/* #region Начало блока footer */
-
+/* Стили для footer (подвал сайта) */
 .footer {
   place-items: center;
 }
 
-/* #endregion Конец блока footer */
-
+/* Блок медиа-запросов */
 @media (width >= 768px) {
   .rec-decor {
     inset-inline-end: 28px;
@@ -295,7 +287,7 @@
 
 @media (width >= 1024px) {
   .page-title {
-    text-shadow: 4px 4px 0 var(--color-purple-2, #ff0070);
+    text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   }
 
   .section {
