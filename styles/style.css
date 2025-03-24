@@ -77,94 +77,12 @@
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
-.cover {
-  display: grid;
-  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
-}
-
-/* Стили всего текста */
-.title {
-  color: var(--main-color, #ff0070);
-  font-weight: 700;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.title-decor {
-  color: var(--highlight-color, #000028);
-  background: var(--accent-color, #ff0070);
-}
-
-.shadow-decor {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
-}
-
-/* Основная секция main */
-.main {
-  display: grid;
-  gap: var(--main-gap, 50px);
-  padding: var(--main-padding-block, 40px) var(--general-padding, 10px);
-}
-
-/* Блок карточек */
-.section {
-  display: grid;
-  gap: 20px;
-}
-
-.section-gallery {
-  gap: 10px;
-}
-
-.section-how__title {
-  margin-block-end: 20px;
-}
-
-.articles-list {
-  display: grid;
-  gap: 20px;
-}
-
-.article {
-  display: grid;
-  gap: 10px;
-}
-
-/* Галерея */
-.gallery-list {
-  display: grid;
-  gap: 10px;
-}
-
-.gallery-list__item-img {
-  display: block;
-  object-fit: cover;
-  object-position: center;
-  block-size: 100%;
-  inline-size: 100%;
-}
-
-/* Блок ссылок */
-.link {
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-.link:focus {
-  outline: 0;
-}
-
-.link:focus-visible {
-  outline: 1px solid currentColor;
-}
-
 /* Стили блока header (шапка сайта) */
 
 .header {
+  display: grid;
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  min-block-size: 100vh;
   align-items: start;
 }
 
@@ -216,6 +134,85 @@
   background: var(--accent-color, #ff0070);
 }
 
+/* Стили текста */
+.title {
+  color: var(--main-color, #ff0070);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.title-decor {
+  color: var(--highlight-color, #000028);
+  background: var(--accent-color, #ff0070);
+}
+
+.shadow-decor {
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+}
+
+/* Основная секция main */
+.main {
+  display: grid;
+  gap: var(--main-gap, 50px);
+  padding: var(--main-padding-block, 40px) var(--general-padding, 10px);
+}
+
+/* Блок карточек */
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section-gallery {
+  gap: 10px;
+}
+
+.section-advice__title {
+  margin-block-end: 20px;
+}
+
+.articles-list {
+  display: grid;
+  gap: 20px;
+}
+
+.article {
+  display: grid;
+  gap: 10px;
+}
+
+/* Галерея */
+.gallery-list {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery-list__item-img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+/* Блок ссылок */
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus {
+  outline: 0;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
 /* Стили для footer (подвал сайта) */
 .footer {
   place-items: center;
@@ -245,7 +242,7 @@
     gap: 20px;
   }
 
-  .section-how__articles-list {
+  .section-advice__articles-list {
     grid-column-start: 2;
   }
 
