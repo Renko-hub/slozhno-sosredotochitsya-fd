@@ -2,13 +2,13 @@
 /* Основные стили тёмной темы */
 .theme_dark.page {
   --text-color: #f1b2ce;
-  --brand-color: #db00ff;
-  --secondary-color: #ff0070;
-  --secondary-color-o-40: #ff007066;
+  --page-title-color: #db00ff;
+  --main-color: #ff0070;
+  --button-hover-color: #ff007066;
   --accent-color: #ff0070;
   --highlight-color: #000028;
-  --page-background-color: #000028;
+  --background-color: #000028;
 
-  --page-background-image: url("../images/cover-image-dark.png");
-  --rec-decor-visibility: visible;
+  --background-image: url("../images/cover-image-dark.png");
+  --rec-decor: visible;
 }
