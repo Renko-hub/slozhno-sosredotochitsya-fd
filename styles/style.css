@@ -6,8 +6,10 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  inset-inline-end: 20px;
-  inset-block-start: 10px;
+  inset-block-start: var(--general-padding, 10px);
+  inset-inline-end: calc(
+    var(--general-padding, 10px) + var(--add-general-padding, 8px)
+  );
 }
 
 .rec-decor::before {
